@@ -1,0 +1,632 @@
+<html>
+    <head>
+       <title>VD's</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style>
+        *{
+    padding:0;
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width:100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: cyan;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+   color: cyan;
+   text-decoration: double;
+   font-weight:400;
+   text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:cyan;
+}
+.btn{
+    background-color:cyan;
+    color:black ;
+    text-decoration: none;
+    border:1px silver;
+    font-weight: bold;
+    padding:10px 25px;
+    border-radius:30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(0.8);
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+
+}
+h2{
+    color:cyan;
+ 
+    font-size: 30px;
+}
+h3{
+    color:cyan;
+    letter-spacing: 2px;
+}
+h4{
+    color:cyan;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin:auto
+}
+.some form{
+      width:380px;
+      max-width: 100%;
+      position:relative;
+}
+.some form input:first-child{
+    display: inline-block;
+    width:  100%;
+    padding:14px 130px 14px 15px;
+    border:2px solid cyan;
+    outline: none;
+    border-radius:30px ;
+}
+.some form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline:none;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    background-color: cyan;
+    color:white;
+    box-shadow:0px 0px 5px #000,0px 0px 15px #858585;
+    top:6px;
+    right:6px;
+}
+.about{
+   width:100%;
+   padding:100px 0px;
+   background-color:black;
+}
+.about img{
+    height:550px;
+    
+}
+.about-text{
+    width:560px;
+    color:lightcyan;
+}
+.main{
+    width: 1130px;
+    max-width:110%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color:cyan;
+    font-size: 50px;
+    margin-bottom:20px;
+}
+.about-text h5{
+    color:White;
+}
+.about-text p{
+    color:aliceblue;
+    margin-bottom:45px;
+    font-size:25px;
+    letter-spacing:1px;
+}
+button{
+    background-color: cyan;
+    color:white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight:bold;
+    border-radius: 30px;
+    padding:13px 30px;
+}
+.service{
+    background:black;
+    color:white;
+    width:100%;
+    padding:100px 0px;
+}
+.title h2{
+  color:white;
+  font-size:80px ;
+  width:1130px;
+  margin:30px auto;
+  text-align:center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 250px;
+    width:335px;
+    padding:20px 35px;
+    background:grey;
+    border-radius:20px;
+    margin:15px;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+ font-size:50px;
+ display:block;
+ text-align: center;
+ margin:25px 0px;
+ color:rgb(0, 179, 255);
+}
+h5{
+    color:aqua;
+    font-size:20px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color:white;
+    font-size:16px;
+    line-height:25px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color:white;
+    color:black;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight:bold;
+    padding:9px 22px;
+    border-radius:30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border:2px solid cyan;
+    cursor:pointer;
+}
+.contactme{
+    width: 100%;
+    height:290px;
+    background: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactme p{
+    color:aqua;
+    font-size:30px;
+    font-weight:bold;
+    margin-bottom: 25px;
+}
+.contactme .button-two{
+    background-color: azure;
+    color:cyan;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding:13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contactme .button-two:hover{
+    background-color: transparent;
+    border:2px solid grey;
+    cursor:pointer;
+}
+footer{
+    position: relative;
+    width:100%;
+    height:200px;
+    background:black;
+   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size:30px;
+    color:black;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+footer p:nth-child(2){
+    font-size:17px;
+    color:black;
+    width: 500px;
+    text-align: center;
+    line-height:26px
+}
+.social{
+    display: flex;
+    justify-content: center;
+
+}
+.social a{
+    width:55px;
+    height:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cyan ;
+    border-radius:50%;
+    margin:22px 10px;
+    color:black;
+    text-decoration: none;
+    font-size:20px;    
+}
+.social a:hover{
+    background-color: transparent;
+    border:2px solid grey;
+    cursor:pointer;
+}
+.end{
+    
+     color:white;
+     font-size:20px;
+ }
+ .contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: inline-block;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  height: 45px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: cyan;
+  border: 2px solid cyan;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: cyan;
+  background: none;
+}
+.box1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(90%, -50%);
+  border-radius: 50%;
+  color: white;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: cyan;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid cyan;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: cyan;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: cyan;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 70%;
+}
+.skills-content .right .mysql::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 70%;
+}
+.skills-content .right .j::before{
+    width: 80%;
+}
+.skills-content .right .cP::before{
+    width: 80%;
+}
+html{
+    scroll-behavior: smooth;
+}
+       </style>
+       <script>
+        $(document).ready(function(){
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.hero').addClass("sticky");
+        }else{
+            $('.hero').removeClass("sticky");
+        }
+        
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
+    });
+       </script>
+    </head>
+    <body bgcolor="black">
+       <div class="hero">
+        <nav>
+           <h2 class="logo">PORTFOLIO</h2> 
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Technical skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#social">Social</a></li>
+           </ul>
+        </nav>
+    </div>
+        <section class="content" >
+            <h2>Hello,I'm </h2>
+            <h2><span>VELUGULA DURGA PRASAD</span></h2>
+            <h2>I'm a student</h2>
+        <div class="some">
+           
+        </div>
+        <div class="box1">
+            <img src="C:\Users\DURGA PRASAD\Documents\vd.jpg" height="500px" width="500px"  style="background-position:center;height:500px;width: 500px;border-radius: 300px;">
+          </div>
+       </section>
+       <section class="about">
+        <div class="main">
+            <img src="C:\Users\DURGA PRASAD\Documents\vd.jpg" style="background-position:center;height:500px;width: 500px;border-radius: 300px;">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>Student</span></h5>
+                <p>
+                    I'm VELUGULA DURGA PRASAD.I'm currently pursuing B.Tech 4th year in the department of Computer Science and Engineering at Sri Vasavi Engineering College,pedatadepalli affliated to JNTUK.<span>Want to be a developer</span> 
+                </p>
+                <button type="button">
+                    Let's Connect
+                  </button>
+            </div>
+        </div>
+       </section>
+        <br>
+        <br>
+        <br>
+    <center>
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My Skills</h2>
+                <br>
+                <div class="skills-content">
+                    
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JAVA SCRIPT</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JAVA</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line j"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>C++</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line cP"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>PHP</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>MySQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line mysql"></div>
+                        </div>
+                         </center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section class="contact" id="contact">
+        <div class="max-width">
+           <center> <h2 class="title">Contact me</h2>
+            <br>
+            <div class="contact-content">
+            
+                <div class="column right">
+                    
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" requicyan>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" requicyan>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" requicyan>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." requicyan></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send</button>
+                        </div>
+                    </center>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <section class="social" id="social">
+            <center>
+                <h2>Visit me over various social platforms</h2>
+                <br>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/karthik-mutta-830413253/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/karithik.mutta"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        </div>
+       
+    </center>
+        </section>
+       
+    </section>
+       <footer>
+        <hr style="width: 100%;">
+        <br>
+        <br>
+        <br>
+      <center>
+         <p>
+            <span style="color: white;">VELUGULA DURGA PRASAD</span>
+        </p></center> 
+        <br>
+        <center><p class="end" style="color: white;">Copyright @DURGAPRASAD</p></center> 
+       </footer>
+    </body>
+</html>
